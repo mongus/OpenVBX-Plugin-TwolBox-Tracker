@@ -22,5 +22,6 @@ Enter your Google Analytics Profile ID. You should probably create a new website
 
 Now you can drag and drop the applet into your flows. If you don't want the ugly OpenVBX URLs showing up in Google Analytics you can set the path that is reported via an option in the applet.
 
+## History
 
 2011-07-13 - Initial commit of working plugin!
