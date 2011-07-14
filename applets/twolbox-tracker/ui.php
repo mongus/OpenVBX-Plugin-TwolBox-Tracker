@@ -21,7 +21,7 @@ if (empty($authId) || empty($authToken))
  <div class="vbx-full-pane">
   <p>The URL path that will show up in Google Analytics. If you leave this blank you'll get the path to this applet instance which isn't very useful.</p>
   <fieldset class="vbx-input-container">
-   <input type="text" name="path" class="medium" value="<?= AppletInstance::getValue('path', '') ?>"/>
+   <input type="text" name="path" class="medium" value="<?php echo AppletInstance::getValue('path', ''); ?>"/>
   </fieldset>
  </div>
 
@@ -29,15 +29,15 @@ if (empty($authId) || empty($authToken))
  <div class="vbx-full-pane">
   <p>The descriptive page title that will show up in Google Analytics. Optional but highly recommended.</p>
   <fieldset class="vbx-input-container">
-   <input type="text" name="title" class="medium" value="<?= AppletInstance::getValue('title', '') ?>"/>
+   <input type="text" name="title" class="medium" value="<?php echo AppletInstance::getValue('title', ''); ?>"/>
   </fieldset>
  </div>
 
  <h3>Google Analytics Profile ID</h3>
  <div class="vbx-full-pane">
-  <p>Leave blank to use the default Profile ID defined in <a href="<?= base_url() ?>config/<?= $configure_path?>">settings</a>.</p>
+  <p>Leave blank to use the default Profile ID defined in <a href="<?php echo base_url(); ?>config/<?php echo $configure_path; ?>">settings</a>.</p>
   <fieldset class="vbx-input-container">
-   <input type="text" name="gaid" class="medium" value="<?= $gaid ?>"/>
+   <input type="text" name="gaid" class="medium" value="<?php echo $gaid; ?>"/>
   </fieldset>
  </div>
 

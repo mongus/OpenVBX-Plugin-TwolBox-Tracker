@@ -98,12 +98,12 @@ else {
 
   <div class="vbx-input-container">
    <label for="auth-id">Auth ID:</label>
-   <input id="auth-id" name="authId" value="<?= $authId ?>" class="medium"/>
+   <input id="auth-id" name="authId" value="<?php echo $authId; ?>" class="medium"/>
   </div>
 
   <div class="vbx-input-container">
    <label for="auth-token">Auth Token:</label>
-   <input type="password" id="auth-token" name="authToken" value="<?= $authToken ?>" class="medium"/>
+   <input type="password" id="auth-token" name="authToken" value="<?php echo $authToken; ?>" class="medium"/>
   </div>
  
   <h2 class="group-heading">Google Analytics</h2>
@@ -112,7 +112,7 @@ else {
 
   <div class="vbx-input-container">
    <label for="default-gaid">Default Profile ID (UA-XXXXX-X):</label>
-   <input id="default-gaid" name="defaultGaid" value="<?= $defaultGaid ?>" class="medium"/>
+   <input id="default-gaid" name="defaultGaid" value="<?php echo $defaultGaid; ?>" class="medium"/>
   </div>
 
   <button id="submit-button" class="submit-button"><span>Save</span></button>
@@ -124,7 +124,7 @@ else {
 <div id="ajax-response"></div>
 
 <script>
-var base_url = '<?= base_url() ?>';
+var base_url = '<?php echo base_url(); ?>';
 </script>
 
 <?
