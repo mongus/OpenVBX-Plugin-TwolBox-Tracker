@@ -1,0 +1,5 @@
+{
+	"name": "TwolBox Tracker",
+	"description": "Send information to Google Analytics via TwolBox",
+	"type": ["voice","sms"]
+}
